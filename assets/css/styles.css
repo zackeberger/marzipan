@@ -72,6 +72,8 @@ nav a:hover {
 }
 
 .logo {
-  height: clamp(64px, 10vw, 128px);
+  height: clamp(40px, 8vw, 72px);
+  width: auto;
+
 }
 
