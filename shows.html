@@ -4,26 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Marzipan — Shows</title>
+
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="icon" href="assets/img/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/img/logo.webp" type="image/webp" />
 </head>
 <body>
   <header>
-    <img src="assets/img/logo.png" alt="Marzipan logo" class="logo" />
-    <!-- shared nav inserted here -->
+    <img src="assets/img/logo.webp" alt="Marzipan logo" class="logo" />
+
     <nav>
       <a href="index.html">home</a>
-      <a href="shows.html">shows</a>
+      <a href="shows.html" aria-current="page">shows</a>
       <a href="news.html">news</a>
     </nav>
   </header>
 
+  <section class="splash">
+    <img
+      src="assets/img/marzipan.webp"
+      alt="Marzipan header graphic"
+      class="header-logo"
+    />
+  </section>
+
   <main class="wrapper">
-    <h1>Upcoming Shows</h1>
+    <h1>Upcoming</h1>
+
+    <ul class="show-list">
+      <li class="show-item">
+        <span class="show-date">August&nbsp;9&nbsp;2025</span>
+        <span class="show-event">A Night of Music&nbsp;at the Armory</span>
+        <span class="show-venue">9 : 00 pm @ The Armory Rooted Café</span>
+        <span class="show-tickets"><a href="https://en.wikipedia.org/wiki/Ticket">Tickets</a></span>
+      </li>
+
+      <!-- Show card (sample placeholder)
+      <li class="show-item">
+        <span class="show-date">September&nbsp;14&nbsp;2025</span>
+        <span class="show-event">Paradise Rock Party</span>
+        <span class="show-venue">8 : 30 pm @ Paradise Rock Club</span>
+        <span class="show-tickets"><a href="https://en.wikipedia.org/wiki/Ticket">Tickets</a></span>
+      </li>
+      -->
+    </ul>
+
+    <h2>Past Events</h2>
+    No shows yet!
+    <!-- Uncomment when ready
+    <ul class="show-list">
+      <li class="show-item">
+        <span class="show-date">May&nbsp;4&nbsp;2025</span>
+        <span class="show-event">May the Fudge Be With You</span>
+        <span class="show-venue">6 : 30 pm @ ONCE Somerville</span>
+        <span class="show-tickets"><a href="https://en.wikipedia.org/wiki/Ticket">Tickets</a></span>
+      </li>
+    </ul>
+    -->
   </main>
 
   <script src="assets/js/main.js"></script>
 </body>
 </html>
-
 
