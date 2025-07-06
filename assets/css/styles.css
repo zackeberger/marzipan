@@ -116,3 +116,44 @@ nav a:hover {
 }
 
 .news-item { margin-block: 2.75rem; }
+
+/* ============================================================
+   MOBILE TWEAKS  –  Anything ≤ 600 px wide (portrait phones)
+   ========================================================== */
+@media (max-width: 600px) {
+
+  /* 1. Reduce left indent so content isn’t shoved off-screen */
+  .wrapper {
+    padding-left: 1.25rem;   /* was 6rem */
+    padding-right: 1.25rem;
+  }
+
+  /* 2. Show cards become a single-column flex block */
+  .show-item {
+    grid-template-columns: 1fr;    /* one column */
+    gap: 0.25rem 0;                /* tighter vertical spacing */
+    text-align: left;              /* everything left-aligned */
+  }
+
+  /* Put a little space between lines */
+  .show-item > span { margin-top: 0.15rem; }
+
+  /* Tickets link sits under venue, full-width */
+  .show-tickets { text-align: left; }
+
+  /* 3. Keep nav from smashing logo; allow wrap and center */
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem 1rem;
+    margin-top: 0.75rem;
+  }
+
+  /* 4 ▸ Images scale down sooner */
+  .header-logo { width: clamp(180px, 70vw, 400px); }
+  .band-img    { width: clamp(220px, 85vw, 500px); }
+
+  /* Optional: shrink the logo in the corner a bit */
+  .logo { height: clamp(32px, 6vw, 48px); }
+}
+
