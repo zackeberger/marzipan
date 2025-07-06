@@ -12,7 +12,8 @@
   --black: #1a1a1a;
   --cream: #fff4e6;
   --accent: #ff4694; /* Marzipan-pink */
-  font-family: "Inter", Arial, sans-serif;
+  --font-sans: "Fredoka", Arial, sans-serif;
+  font-family: var(--font-sans);
   line-height: 1.6;
   color: var(--black);
   background: var(--cream);
@@ -77,3 +78,41 @@ nav a:hover {
 
 }
 
+/* Align page copy with the left edge of the logo */
+.wrapper {
+  padding-left: 6rem;              /* tweak this if the logo width changes */
+  padding-right: 2rem;
+  max-width: 70rem;
+  margin-inline: auto;
+}
+
+/* SHOW LIST — relaxed card style --------------------------- */
+.show-list {
+  list-style: none;
+  margin: 0 0 3rem 0;
+  padding: 0;
+}
+
+.show-item {
+  display: grid;
+  grid-template-columns: minmax(9ch, 20ch) 2fr 1.2fr auto; /* 4 columns */
+  gap: 0.6rem 0.8rem;             /* tighter gap between 2nd & 3rd col */
+  align-items: center;
+
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+
+  border: 1px solid var(--black);
+  border-radius: 12px;
+  background: var(--cream);
+}
+
+.show-date     { font-weight: 600; }
+.show-tickets  { text-align: right; }      /* keeps link on the right */
+.show-tickets a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.news-item { margin-block: 2.75rem; }
