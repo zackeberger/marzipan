@@ -157,3 +157,49 @@ nav a:hover {
   .logo { height: clamp(32px, 6vw, 48px); }
 }
 
+/* Demo track */
+.demo-track {
+  margin: 3rem auto 4rem;
+  text-align: center;
+}
+.demo-track h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: var(--accent);
+}
+.demo-track audio {
+  width: clamp(240px, 60vw, 420px);  /* neat responsive bar */
+}
+
+/* ============================================================
+   BAND PHOTOS — uniform tiles
+   ========================================================== */
+.band-photos {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+  flex-wrap: wrap;                /* stacks on narrow screens */
+}
+
+.member {
+  text-align: center;
+  width: clamp(160px, 25vw, 220px);  /* responsive width */
+}
+
+.member-img {
+  /* ► The magic ◄ */
+  aspect-ratio: 1 / 1;            /* perfect square tile */
+  width: 100%;
+  object-fit: cover;              /* zoom‑crop to fill the square */
+  object-position: center;        /* keep faces centered */
+  border-radius: 12px;
+  display: block;
+}
+
+.member figcaption {
+  margin-top: 0.45rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
