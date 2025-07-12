@@ -45,14 +45,6 @@ nav a:hover {
   height: auto;
 }
 
-.band-img {
-  display: block;
-  margin: 0 auto;
-  width: clamp(200px, 50vw, 560px);
-  height: auto;
-  border-radius: 12px;
-}
-
 .intro-text {
   max-width: 85ch;
   margin: 2.5rem auto 4rem;
@@ -167,9 +159,6 @@ nav a:hover {
   margin-bottom: 0.8rem;
   color: var(--accent);
 }
-.demo-track audio {
-  width: clamp(240px, 60vw, 420px);  /* neat responsive bar */
-}
 
 /* ============================================================
    BAND PHOTOS — uniform tiles
@@ -201,5 +190,12 @@ nav a:hover {
   margin-top: 0.45rem;
   font-weight: 600;
   font-size: 1rem;
+}
+
+/* SoundCloud widget */
+.sc-player {
+  max-width: 600px;   /* keeps it tidy on giant monitors */
+  display: block;
+  margin-inline: auto;
 }
 
