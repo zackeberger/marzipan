@@ -87,7 +87,7 @@ nav a:hover {
 
 .show-item {
   display: grid;
-  grid-template-columns: minmax(9ch, 20ch) 2fr 1.2fr auto; /* 4 columns */
+  grid-template-columns: minmax(9ch, 19ch) 1.2fr 1.2fr auto; /* 4 columns */
   gap: 0.6rem 0.8rem;             /* tighter gap between 2nd & 3rd col */
   align-items: center;
 
